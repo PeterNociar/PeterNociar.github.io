@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peter Nociar — tools that turn one thing into another</title>
+<meta name="description" content="Personal engineering projects by Peter Nociar: a Linux laser-engraver controller, a photo-to-stencil generator, a CV builder, a capture app, a hex combat game and a poster tiler.">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="Peter Nociar — personal projects">
+<meta property="og:description" content="Six tools that take a messy input and produce something a machine or a person can act on.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23071a2b'/%3E%3Cpath d='M7 22V10h6a4 4 0 010 8H7' fill='none' stroke='%23e9f1f7' stroke-width='2.4'/%3E%3Cpath d='M19 13h7M19 19h7' stroke='%23ff6a2b' stroke-width='2.4'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<a class="skip" href="#work">Skip to the projects</a>
+
+<header class="topbar">
+  <a class="topbar-mark" href="#top">
+    <span class="mono">PN</span>
+    <span class="topbar-mark-name">Peter Nociar</span>
+  </a>
+  <nav class="topbar-nav mono">
+    <a href="#work">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-head">
+      <p class="eyebrow mono">Peter Nociar · software engineer · personal projects</p>
+      <h1 class="hero-title">Turning one<br>thing into<br><em>another</em></h1>
+      <p class="hero-lede">
+        Six things I build outside work. Each one takes an input nobody can act on —
+        a photograph, a drawing, a scattered career, a thought spoken while driving —
+        and produces something a machine or a person can.
+      </p>
+      <p class="hero-hint mono" aria-hidden="true">Pick a line ↓</p>
+    </div>
+
+    <div class="board" id="board" role="list" aria-label="Projects, listed by what each one transforms"></div>
+  </section>
+
+  <section class="statement" aria-labelledby="statement-title">
+    <p class="statement-eyebrow mono" id="statement-title">Why these exist</p>
+    <p class="statement-text">
+      None of this is a product. Every one of them started because I wanted the tool on my
+      own bench, and kept going until it was solid enough to hand to someone else — no
+      pricing page, no roadmap, no customers. If you have the same problem, you should be
+      able to use the same tool.
+    </p>
+  </section>
+
+  <section class="work" id="work">
+    <div class="section-head">
+      <h2 class="section-title">The projects</h2>
+      <p class="section-note mono">6 repositories · all private · 2022 — 2026</p>
+    </div>
+    <div class="plates" id="plates"></div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="section-head">
+      <h2 class="section-title">About</h2>
+    </div>
+    <div class="about-body">
+      <p class="about-lede">
+        I am a software engineer. These are the projects I keep after hours — mostly desktop
+        applications that talk to hardware, and mobile applications that keep track of things
+        I would otherwise lose.
+      </p>
+      <p>
+        The work tends to start with a machine on the bench or a job I got tired of doing by hand,
+        which keeps it honest: a laser either fires on the right line or it does not, a stencil
+        either lifts off the steel in one piece or it does not. I write the vocabulary down before
+        the code, keep the model separate from whatever is drawing it, and lean on tests for the
+        parts where being nearly right is worse than being obviously wrong.
+      </p>
+      <dl class="facts mono">
+        <div><dt>Mostly</dt><dd>Python, FastAPI, SQLModel</dd></div>
+        <div><dt>Interfaces</dt><dd>Flutter, PySide6, Kivy</dd></div>
+        <div><dt>Close to metal</dt><dd>GRBL, serial, ESP32, SVG, G-code</dd></div>
+        <div><dt>Daily driver</dt><dd>Linux</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="section-head">
+      <h2 class="section-title">Contact</h2>
+    </div>
+    <ul class="contact-list">
+      <li>
+        <span class="contact-key mono">Name</span>
+        <span class="contact-val">Peter Nociar</span>
+      </li>
+      <li>
+        <span class="contact-key mono">Email</span>
+        <a class="contact-val" href="mailto:pnociar@gmail.com">pnociar@gmail.com</a>
+      </li>
+      <li>
+        <span class="contact-key mono">GitHub</span>
+        <a class="contact-val" href="https://github.com/PeterNociar" rel="me noopener">github.com/PeterNociar</a>
+      </li>
+    </ul>
+    <p class="contact-note">
+      The repositories above are private while they settle. Ask for access to any of them and
+      I will hand it over.
+    </p>
+  </section>
+
+</main>
+
+<footer class="footer mono">
+  <span>Peter Nociar</span>
+  <span>Static HTML, CSS and about 300 lines of JavaScript. No build step.</span>
+</footer>
+
+<!-- Project sheet: opened by hash route, e.g. #/homelander -->
+<div class="sheet-scrim" id="sheet" hidden>
+  <article class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" tabindex="-1">
+    <button class="sheet-close mono" id="sheet-close" type="button" aria-label="Close project">Close ✕</button>
+    <div class="sheet-body" id="sheet-body"></div>
+  </article>
+</div>
+
+<!-- Lightbox for screenshots -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close mono" id="lightbox-close" type="button" aria-label="Close image">Close ✕</button>
+  <figure class="lightbox-figure">
+    <img id="lightbox-img" alt="">
+    <figcaption class="mono" id="lightbox-cap"></figcaption>
+  </figure>
+  <button class="lightbox-nav lightbox-prev" id="lightbox-prev" type="button" aria-label="Previous image">‹</button>
+  <button class="lightbox-nav lightbox-next" id="lightbox-next" type="button" aria-label="Next image">›</button>
+</div>
+
+<noscript>
+  <p class="noscript">This page renders its project list with JavaScript. With it switched off,
+  reach me at <a href="mailto:pnociar@gmail.com">pnociar@gmail.com</a>.</p>
+</noscript>
+
+<script src="js/projects.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
