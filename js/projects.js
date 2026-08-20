@@ -153,7 +153,7 @@ const PROJECTS = [
     tagline: 'Cuts a big image into printable pages you can tile back together.',
     pipeline: ['image', 'placed page frames', 'cropped tiles', 'multi-page PDF'],
     stack: ['Python', 'Kivy', 'borb', 'Pillow'],
-    status: { key: 'archived', label: 'Archived' },
+    status: { key: 'v1', label: 'v1 — working' },
     started: '2022',
     lastTouched: '2022-06',
     commits: 22,
