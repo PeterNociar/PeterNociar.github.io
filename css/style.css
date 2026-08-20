@@ -434,7 +434,7 @@ img { max-width: 100%; display: block; }
   background: var(--muted-deep);
 }
 .status-active   { background: #63d29b; }
-.status-building { background: var(--heat); }
+.status-v1       { background: #63d29b; box-shadow: 0 0 0 2px color-mix(in srgb, #63d29b 25%, transparent); }
 .status-archived { background: var(--muted-deep); }
 
 /* -------------------------------------------------------------- about */
