@@ -121,9 +121,8 @@ const PROJECTS = [
       'Capture has to cost nothing or it does not happen, so every input is one gesture from wherever you already are. Organisation is the part that gets deferred, so the backend proposes tags from your own existing vocabulary rather than inventing a taxonomy — the collection stays yours, and stays consistent, without a filing session.',
     shots: [
       { file: '01-feed.jpg', caption: 'The feed: everything saved, newest first, filterable by type' },
-      { file: '02-voice-notes.jpg', caption: 'Voice notes, transcribed on-device and searchable as text' },
-      { file: '03-terminal-theme.jpg', caption: 'The same feed in the terminal theme' },
-      { file: '04-item-tags.jpg', caption: 'A saved item with its link, preview image and accepted tags' }
+      { file: '02-terminal-theme.jpg', caption: 'The same feed in the terminal theme' },
+      { file: '03-item-tags.jpg', caption: 'A saved item with its link, preview image and accepted tags' }
     ],
     shotsNote: 'Captured from a debug build — hence the corner ribbon.'
   },

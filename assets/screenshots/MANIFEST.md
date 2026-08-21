@@ -29,5 +29,6 @@ All six projects have screenshots.
 - **netcher/** — the cut stencils, or an etched steel plate
 - **spacewars/** — a Panda3D render, to show the renderer swap
 - **pictiler/** — the printed tiles taped together
-- **starlog/** — the share-sheet confirmation dialog, and tag suggestions mid-review; a
-  release build would also drop the DEBUG ribbon
+- **starlog/** — the share-sheet confirmation dialog, tag suggestions mid-review, and a
+  voice note with its transcript (the earlier one was dropped — the transcript text was
+  too personal for a public page); a release build would also drop the DEBUG ribbon
