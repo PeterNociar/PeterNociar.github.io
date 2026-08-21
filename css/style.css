@@ -574,6 +574,35 @@ a.contact-val:hover { color: var(--heat); border-bottom-color: var(--heat); }
   max-width: 48ch;
 }
 
+.sheet-live {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .6rem;
+  margin: 0 0 1.6rem;
+  padding: .55rem .9rem;
+  border: 1px solid var(--sheet-accent, var(--heat));
+  color: var(--paper);
+  text-decoration: none;
+  transition: background-color .2s var(--ease);
+}
+.sheet-live:hover {
+  background: color-mix(in srgb, var(--sheet-accent, var(--heat)) 16%, transparent);
+}
+.sheet-live-label { color: var(--sheet-accent, var(--heat)); }
+.sheet-live-url {
+  font-family: var(--mono);
+  font-size: .85rem;
+  letter-spacing: .01em;
+}
+.sheet-live-arrow { color: var(--sheet-accent, var(--heat)); }
+
+.titleblock-link {
+  color: var(--paper);
+  text-decoration: none;
+  border-bottom: 1px solid var(--sheet-accent, var(--heat));
+}
+.titleblock-link:hover { color: var(--sheet-accent, var(--heat)); }
+
 .sheet-pipe {
   display: flex;
   flex-wrap: wrap;

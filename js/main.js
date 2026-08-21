@@ -119,6 +119,18 @@
     title.id = 'sheet-title';
     sheetBody.appendChild(title);
     sheetBody.appendChild(el('p', 'sheet-tagline', p.tagline));
+
+    if (p.live) {
+      var live = el('a', 'sheet-live');
+      live.href = p.live;
+      live.rel = 'noopener';
+      live.target = '_blank';
+      live.appendChild(el('span', 'sheet-live-label mono', 'Try it'));
+      live.appendChild(el('span', 'sheet-live-url', p.live.replace(/^https?:\/\//, '').replace(/\/$/, '')));
+      live.appendChild(el('span', 'sheet-live-arrow', '↗'));
+      sheetBody.appendChild(live);
+    }
+
     sheetBody.appendChild(pipeline(p, el('p', 'sheet-pipe')));
 
     sheetBody.appendChild(el('h3', 'sheet-h', 'Why it exists'));
@@ -162,7 +174,7 @@
     }
 
     var tb = el('dl', 'titleblock');
-    [
+    var rows = [
       ['Project', p.name],
       ['Stack', p.stack.join(' · ')],
       ['Status', p.status.label],
@@ -171,10 +183,22 @@
       ['Commits', String(p.commits)],
       ['Size', p.files],
       ['Repository', p.repoPath]
-    ].forEach(function (pair) {
+    ];
+    if (p.live) rows.push(['Live at', p.live, true]);
+    rows.forEach(function (pair) {
       var cell = el('div');
       cell.appendChild(el('dt', null, pair[0]));
-      cell.appendChild(el('dd', null, pair[1]));
+      var dd = el('dd');
+      if (pair[2]) {
+        var a = el('a', 'titleblock-link', pair[1].replace(/^https?:\/\//, '').replace(/\/$/, ''));
+        a.href = pair[1];
+        a.rel = 'noopener';
+        a.target = '_blank';
+        dd.appendChild(a);
+      } else {
+        dd.textContent = pair[1];
+      }
+      cell.appendChild(dd);
       tb.appendChild(cell);
     });
     sheetBody.appendChild(tb);

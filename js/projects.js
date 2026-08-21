@@ -75,6 +75,7 @@ const PROJECTS = [
     commits: 227,
     files: '64 API endpoints',
     repoPath: 'github.com/PeterNociar/CrystalCV2',
+    live: 'https://www.crystalcv.pnoco.org/',
     accent: '#8C7BFF',
     problem:
       'Every application wants a different CV, so the same work history gets retyped, drifts out of sync across a folder of near-identical documents, and the good version is never the one you can find.',
