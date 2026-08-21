@@ -28,7 +28,9 @@ const PROJECTS = [
     ],
     detail:
       'Machine settings and material settings are deliberately separate. A Profile describes a machine and nothing else; power, speed and passes belong to the job. Supporting a new engraver means writing a Profile, not patching the code. First machine is a TwoTrees TTS-10 — GRBL firmware, CH340 serial, 115200 baud, no homing switches — because it is the one that can be validated end to end on a real bench.',
-    shots: []
+    shots: [
+      { file: '01-canvas-job-controls.png', caption: 'Imported SVG on the work-area canvas, with layer power and speed, jog pad, framing and job controls' }
+    ]
   },
   {
     slug: 'netcher',
@@ -56,7 +58,9 @@ const PROJECTS = [
     ],
     detail:
       'The tonal range of the photograph becomes etch depth. Areas exposed through more stencils sit in the acid for more cycles, cut deeper, and read darker on the finished plate. Getting that mapping right is the whole job — the rest of the app exists to make the geometry survive contact with a cutter and a sheet of steel.',
-    shots: []
+    shots: [
+      { file: '01-netcher-blossoms.png', caption: 'Blossom photograph with scale calibration points, layer handles on the histogram, and the three segmented layers composited in colour' }
+    ]
   },
   {
     slug: 'crystalcv',
@@ -84,12 +88,9 @@ const PROJECTS = [
     detail:
       'The data pool is the point. A CV is a view over it, not a document you own and maintain. Change a job title once and every CV that references it is correct. Backend is FastAPI with SQLModel and Alembic migrations; the client is a single Flutter codebase covering web, desktop and mobile layouts.',
     shots: [
-      { file: '02-editor-split-view.png', caption: 'Editor beside a live preview of the rendered CV' },
-      { file: '03-export-dialog.png', caption: 'Export: format, paper size, colour scheme' },
-      { file: '05-work-experience-form.png', caption: 'Work experience entry in the data pool' },
-      { file: '06-mobile-dashboard.png', caption: 'Mobile layout, same Flutter codebase' }
-    ],
-    shotsNote: 'Captured from the end-to-end test suite, so the data is fake and the toast is a test fixture.'
+      { file: '01-dashboard-data-pool.png', caption: 'Dashboard: the data pool counts by entity type, and the CVs built from it' },
+      { file: '02-templates.png', caption: 'Template gallery — the same career data rendered six ways' }
+    ]
   },
   {
     slug: 'starlog',
@@ -144,7 +145,10 @@ const PROJECTS = [
     ],
     detail:
       'The combat model is kept strictly separate from the renderer, which is what made the ongoing move from Pyglet to Panda3D a swap of the view rather than a rewrite. The vocabulary is pinned down in the repo — bearing, firing arc, aiming axis, placement, hardpoint slot each mean exactly one thing in code and in the rules.',
-    shots: []
+    shots: [
+      { file: '01-movement-range.png', caption: 'Reachable hexes for the selected corvette, with the combat log and target vessel readout' },
+      { file: '02-targeting.png', caption: 'Targeting a missile launcher — the highlighted hexes are what that weapon can actually reach' }
+    ]
   },
   {
     slug: 'pictiler',
@@ -171,8 +175,8 @@ const PROJECTS = [
     detail:
       'An early Kivy project, finished and left alone. Frames are drawn straight into the canvas as instruction groups, and the PDF is assembled with borb, one page per placed frame.',
     shots: [
-      { file: '01-frame-portrait.png', caption: 'A4 portrait tile, cropped from the source image' },
-      { file: '02-frame-landscape.png', caption: 'A4 landscape tile from the same source' }
+      { file: '01-frames-placed.png', caption: 'A4 frames placed over the source image, snapping to each other, with corner marks for trimming' },
+      { file: '02-exported-pdf.png', caption: 'The exported PDF — one page per placed frame, six tiles for this poster' }
     ]
   }
 ];

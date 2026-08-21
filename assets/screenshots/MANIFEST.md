@@ -19,40 +19,22 @@ A project with an empty `shots` array shows a "no capture yet" tile — nothing 
 - Real data beats test data. Empty states and loading spinners read as unfinished.
 - Captions are shown under the enlarged image, so write them for a stranger.
 
-## Wanted, by project
+## Status
 
-### homelander/
-- Work-area canvas with an imported SVG placed to scale
-- Layer panel: colour mapped to cut / engrave, with power, speed and passes
-- Generated G-code preview
-- Live control: jog pad, origin, frame, status readout
-- The TTS-10 mid-job, if you have a photo
+Filled: homelander, netcher, crystalcv, spacewars, pictiler.
+Still empty: **starlog**.
 
-### netcher/
-- Source photograph loaded, before segmentation
-- Histogram with the layer handles being dragged
-- Layer preview showing the cumulative masks
-- A generated stencil SVG with bridges and registration crosshairs
-- The cut stencils, or an etched plate, if you have a photo
+## Wanted — starlog/
 
-### starlog/
 - Chronological feed with a mix of links, notes and images
 - Share-sheet confirmation dialog
 - Voice note with its transcript
 - Tag suggestions waiting to be accepted or rejected
 - Search results across item types
 
-### spacewars/
-- Hex board mid-engagement
-- Firing arc drawn from a ship
-- Ship fit-out / hardpoint screen
-- Panda3D render, to show the renderer swap
+## Nice to have, for the ones already filled
 
-### crystalcv/
-Currently holding four end-to-end test captures (fake data, test toast visible).
-Replace with real ones when convenient: dashboard with a populated data pool,
-editor beside preview, export dialog, a finished PDF.
-
-### pictiler/
-Holding two A4 page tiles. A screenshot of frames placed over an image in the
-Kivy window would show the actual tool.
+- **homelander/** — the TTS-10 mid-job, or a finished burn
+- **netcher/** — the cut stencils, or an etched steel plate
+- **spacewars/** — a Panda3D render, to show the renderer swap
+- **pictiler/** — the printed tiles taped together
