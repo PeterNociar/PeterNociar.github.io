@@ -21,16 +21,7 @@ A project with an empty `shots` array shows a "no capture yet" tile — nothing 
 
 ## Status
 
-Filled: homelander, netcher, crystalcv, spacewars, pictiler.
-Still empty: **starlog**.
-
-## Wanted — starlog/
-
-- Chronological feed with a mix of links, notes and images
-- Share-sheet confirmation dialog
-- Voice note with its transcript
-- Tag suggestions waiting to be accepted or rejected
-- Search results across item types
+All six projects have screenshots.
 
 ## Nice to have, for the ones already filled
 
@@ -38,3 +29,5 @@ Still empty: **starlog**.
 - **netcher/** — the cut stencils, or an etched steel plate
 - **spacewars/** — a Panda3D render, to show the renderer swap
 - **pictiler/** — the printed tiles taped together
+- **starlog/** — the share-sheet confirmation dialog, and tag suggestions mid-review; a
+  release build would also drop the DEBUG ribbon
